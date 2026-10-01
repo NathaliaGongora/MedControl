@@ -1,0 +1,21 @@
+# NetBeans
+/build/
+/dist/
+/nbproject/private/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# IDEs e sistema operacional
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Configurações locais e segredos
+.env
+*.local
+application-local.properties

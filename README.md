@@ -61,17 +61,20 @@ docs/
 └── original/      # artigo e apresentação acadêmica
 database/
 └── schema.sql      # criação limpa do banco utilizado pela aplicação
+nbproject/          # configuração do projeto NetBeans
+build.xml           # build Ant gerado pelo NetBeans
+manifest.mf         # manifesto da aplicação
 ```
 
 ## Configuração original
 
-A classe `Conexao` aponta para uma instância local do SQL Server na porta `1433`, utilizando o banco `ProjetoMedControl` e autenticação integrada do Windows. É necessário instalar o driver JDBC da Microsoft e ajustar a conexão conforme o ambiente.
+A classe `Conexao` aponta para uma instância local do SQL Server na porta `1433`, utilizando o banco `ProjetoMedControl` e autenticação integrada do Windows. Baixe o driver JDBC da Microsoft, coloque `mssql-jdbc-13.4.0.jre11.jar` na pasta local `lib/` e ajuste a conexão conforme o ambiente.
 
 Para criar o banco, execute `database/schema.sql` no SQL Server Management Studio antes de iniciar a aplicação.
 
 ## Limitações conhecidas
 
-- o material original não incluía toda a estrutura do NetBeans nem um build reproduzível;
+- o driver JDBC não está versionado e precisa ser adicionado localmente na pasta `lib/`;
 - a aplicação depende de SQL Server local e autenticação integrada;
 - as senhas são tratadas em texto simples nesta versão acadêmica e **não devem ser usadas dessa forma em produção**;
 - os arquivos `.form` dependem do editor visual do NetBeans;
