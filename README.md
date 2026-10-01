@@ -2,7 +2,7 @@
 
 Sistema desktop acadêmico para auxiliar no gerenciamento de medicamentos, horários, dosagens, estoque e validade. O projeto foi desenvolvido pelo grupo **Code4Care** na disciplina UPX 2 do curso de Análise e Desenvolvimento de Sistemas da FACENS.
 
-> Este repositório registra a versão entregue no projeto acadêmico. O código foi reorganizado para consulta e portfólio. O material original não continha toda a estrutura do projeto NetBeans, mas o histórico SQL fornecido pela equipe permitiu preparar um script limpo de criação do banco.
+> Este repositório registra a versão entregue no projeto acadêmico. O código foi reorganizado para consulta e portfólio. 
 
 ## Funcionalidades implementadas
 
