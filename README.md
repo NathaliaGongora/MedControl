@@ -2,7 +2,7 @@
 
 Sistema desktop acadêmico para auxiliar no gerenciamento de medicamentos, horários, dosagens, estoque e validade. O projeto foi desenvolvido pelo grupo **Code4Care** na disciplina UPX 2 do curso de Análise e Desenvolvimento de Sistemas da FACENS.
 
-> Este repositório registra a versão entregue no projeto acadêmico. O código foi reorganizado para consulta e portfólio. 
+> Projeto acadêmico preservado e reorganizado para portfólio. A estrutura do NetBeans, os formulários Swing, o código-fonte e o esquema do banco estão disponíveis no repositório. Para executar, é necessário configurar localmente o SQL Server e o driver JDBC.
 
 ## Funcionalidades implementadas
 
@@ -38,7 +38,7 @@ Sistema desktop acadêmico para auxiliar no gerenciamento de medicamentos, horá
 
 ## Tecnologias
 
-- Java 24.0.2
+- Java 17 (nível de compilação configurado no NetBeans)
 - Java Swing
 - NetBeans 27
 - Microsoft SQL Server
@@ -66,7 +66,7 @@ build.xml           # build Ant gerado pelo NetBeans
 manifest.mf         # manifesto da aplicação
 ```
 
-## Configuração original
+## Como executar
 
 A classe `Conexao` aponta para uma instância local do SQL Server na porta `1433`, utilizando o banco `ProjetoMedControl` e autenticação integrada do Windows. Baixe o driver JDBC da Microsoft, coloque `mssql-jdbc-13.4.0.jre11.jar` na pasta local `lib/` e ajuste a conexão conforme o ambiente.
 
@@ -84,7 +84,7 @@ Para criar o banco, execute `database/schema.sql` no SQL Server Management Studi
 
 - armazenar senhas com hash seguro;
 - externalizar a configuração do banco;
-- criar script versionado para o esquema SQL;
+- criar migrações e dados de demonstração separados do esquema;
 - padronizar os pacotes `DAO` e `dao`;
 - adicionar testes e automação de build;
 - modernizar a interface e separar melhor as camadas.
